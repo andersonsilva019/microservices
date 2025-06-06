@@ -74,21 +74,16 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.3.2</version>
 				<configuration>
-					<image>
-						<name>andersonsilva019/${project.artifactId}:s4</name>
-						<env>
-							<BP_JVM_VERSION>17.*</BP_JVM_VERSION>
-						</env>
-					</image>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
+					<from>
+						<image>openjdk:21-jdk-slim</image>
+					</from>
+					<to>
+						<image>docker.io/andersonsilva019/${project.artifactId}:s6</image>
+					</to>
 				</configuration>
 			</plugin>
 
