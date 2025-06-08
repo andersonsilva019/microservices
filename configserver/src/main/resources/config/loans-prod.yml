@@ -1,13 +1,8 @@
-spring:
-  config:
-    activate:
-      on-profile: "prod"
-
 build:
   version: "1.0"
 
-accounts:
-  message: "Welcome to BrandonBank accounts related prod APIs "
+loans:
+  message: "Welcome to BrandonBank Loans related prod APIs "
   contactDetails:
     name: "Brandon Browns Sr - Product Owner"
     email: "brandon@brownsbank.com"
