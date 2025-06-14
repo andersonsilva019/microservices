@@ -1,17 +1,21 @@
 package com.example.accounts.dto;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
 import java.util.Map;
 
 @ConfigurationProperties(prefix = "accounts")
-public record AccountsContactInfoDTO(
-        String message,
+@Getter
+@Setter
+public class AccountsContactInfoDTO {
+    private String message;
 
-        Map<String, String> contactDetails,
+    private Map<String, String> contactDetails;
 
-        List<String> onCallSupport
-) {
+    private List<String> onCallSupport;
+
 
 }

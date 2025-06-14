@@ -34,6 +34,14 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
@@ -108,7 +116,7 @@
 						<image>openjdk:21-jdk-slim</image>
 					</from>
 					<to>
-						<image>docker.io/andersonsilva019/${project.artifactId}:s4</image>
+						<image>docker.io/andersonsilva019/${project.artifactId}:s6</image>
 					</to>
 				</configuration>
 			</plugin>
